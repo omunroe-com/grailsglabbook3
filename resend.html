@@ -54,7 +54,7 @@
             <div class="media-body">
                 <form method="POST" action="https://api.grails3book.com/book/resend" onsubmit="submitButton.disabled = true; return true;">
                   <p>Enter the Email address you used to purchase the book.</p>
-                  <input type="email" name="email">
+                  <input type="email" name="email" required>
                   <input class="btn btn-primary" type="submit" name="submitButton" value="Resend"/>
                 </form>
                 <p>Need help? <a href="mailto:info@grails3book.com">info@grails3book.com</a></p>
