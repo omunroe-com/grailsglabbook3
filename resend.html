@@ -52,13 +52,16 @@
                 <a class="pull-left" href="#"><img class="media-object" src="pratical-grails-3-book-cover.png" alt="Pratical Grails 3 Book Cover" width="228" height="316" /></a>
             </p>
             <div class="media-body">
-                <form method="POST" action="https://api.grails3book.com/book/resend" onsubmit="submitButton.disabled = true; return true;">
+                <form class="form-inline" method="POST" action="https://api.grails3book.com/book/resend" onsubmit="submitButton.disabled = true; return true;">
                   <p>Enter the Email address you used to purchase the book.</p>
-                  <input type="email" name="email" required>
-                  <input class="btn btn-primary" type="submit" name="submitButton" value="Resend"/>
+                  <div class="form-group">
+                    <input type="email" name="email" class="form-control" required>
+                  </div>
+                  <button class="btn btn-primary" type="submit" name="submitButton" value="Resend">Resend</button>
                 </form>
-                <p>Need help? <a href="mailto:info@grails3book.com">info@grails3book.com</a></p>
             </div>
+            <hr/>
+            <p>Need help? <a href="mailto:info@grails3book.com">info@grails3book.com</a></p>
             <!--/media-body-->
           </div>
           <!--/media-->
