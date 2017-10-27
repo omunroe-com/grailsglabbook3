@@ -3,7 +3,7 @@ var handler = StripeCheckout.configure({
   key: 'pk_live_wGul8agmHwgkxbJ6bn7CETrY', // pk_test_zTxlGzEk4FhwYXweRN9ld1HP
   image: 'https://www.grails3book.com/pratical-grails-3-book-cover.png',
   locale: 'auto',
-  bitcoin: true,
+  bitcoin: false,
   zipCode: true,
   token: function(token) {
     console.log(token);
