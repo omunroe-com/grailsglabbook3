@@ -29,7 +29,7 @@ document.getElementById('customButton').addEventListener('click', function(e) {
   handler.open({
     name: 'Practical Grails 3',
     description: 'Early Access Book',
-    amount: 2500
+    amount: 3999
   });
   e.preventDefault();
 });
