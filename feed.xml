@@ -1,0 +1,542 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JBake</title>
+    <link>https://www.grails3book.com</link>
+    <atom:link href="https://www.grails3book.com/feed.xml" rel="self" type="application/rss+xml" />
+    <description>JBake Bootstrap Template</description>
+    <language>en-gb</language>
+    <pubDate>Sat, 3 Feb 2018 14:27:43 -0600</pubDate>
+    <lastBuildDate>Sat, 3 Feb 2018 14:27:43 -0600</lastBuildDate>
+
+    
+    <item>
+      <title>Practical Grails 3 - 1.1 Release</title>
+      <link>https://www.grails3book.com/blog/2018/2018-01-27-grails-book--1.1-release.html</link>
+      <pubDate>Sat, 27 Jan 2018 00:00:00 -0600</pubDate>
+      <guid isPermaLink="false">blog/2018/2018-01-27-grails-book--1.1-release.html</guid>
+      <description>
+      &lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;m excited to announce &lt;strong&gt;Practical Grails 3&lt;/strong&gt; &lt;code&gt;1.1&lt;/code&gt; has been released!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you&amp;#8217;ve purchased previously you can &lt;a href=&quot;https://www.grails3book.com/resend.html&quot;&gt;grab an updated copy.&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you&amp;#8217;ve not purchased yet get &lt;a href=&quot;https://www.grails3book.com/early-access.html&quot;&gt;your copy today!&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;changelog&quot;&gt;Changelog&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Updated all examples to Grails 3.3.2.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated examples to use new trait unit testing framework.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added upgrade guide to appendix for Grails 3.2 &amp;#8594; 3.3.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updates and clarifications based on feedback from readers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;website_updates&quot;&gt;Website Updates&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This website and blog are now powered by &lt;a href=&quot;http://jbake.org/&quot;&gt;JBake&lt;/a&gt;!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	  </description>
+    </item>
+    
+    <item>
+      <title>Practical Grails 3 - 1.0 Release</title>
+      <link>https://www.grails3book.com/blog/2017/2017-12-01-grails-book-release.html</link>
+      <pubDate>Fri, 1 Dec 2017 00:00:00 -0600</pubDate>
+      <guid isPermaLink="false">blog/2017/2017-12-01-grails-book-release.html</guid>
+      <description>
+      &lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Hello, Everyone! I&amp;#8217;m excited to announce the &lt;code&gt;1.0&lt;/code&gt; release of Practical Grails 3!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you&amp;#8217;ve purchased previously you can &lt;a href=&quot;https://www.grails3book.com/resend.html&quot;&gt;grab an updated copy.&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you&amp;#8217;ve not purchased yet get &lt;a href=&quot;https://www.grails3book.com/early-access.html&quot;&gt;your copy today!&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;A HUGE thank you to the &lt;strong&gt;500+&lt;/strong&gt; people who purchased early access!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;admonitionblock note&quot;&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class=&quot;icon&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;Note&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;
+The book will stay Early Access price until 12/7, so grab your copy today!
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;living_book&quot;&gt;Living Book&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The 1.0 release is not the end - it&amp;#8217;s the beginning! I have been working on the 3.3.x branch updates for a while but there is so much new I wanted the 1.0 to be based off Grails 3.2.
+Please note when you purchase Practical Grails 3 you will receive update through the whole life of Grails 3.x.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The book will continue to grow with new features and feedback as Grails grows.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;planned_for_1_1&quot;&gt;Planned for 1.1&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Grails 3.3.x&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Data Services&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;GraphQL intro&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;More deployment scenarios&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Feedback from you!&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;g3_summit&quot;&gt;G3 Summit&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I had a great time at the G3 Summit this year - check out my recap blog post!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://erichelgeson.github.io/blog/2017/12/02/g3summit/&quot; class=&quot;bare&quot;&gt;https://erichelgeson.github.io/blog/2017/12/02/g3summit/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	  </description>
+    </item>
+    
+    <item>
+      <title>Practical Grails 3 - 0.8 Release</title>
+      <link>https://www.grails3book.com/blog/2017/2017-08-26-grails-book-08.html</link>
+      <pubDate>Sat, 26 Aug 2017 00:00:00 -0500</pubDate>
+      <guid isPermaLink="false">blog/2017/2017-08-26-grails-book-08.html</guid>
+      <description>
+      &lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Hello, Everyone! I&amp;#8217;m excited to announce the &lt;code&gt;0.8&lt;/code&gt; release of Practical Grails 3!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you&amp;#8217;ve purchased previously you can &lt;a href=&quot;https://www.grails3book.com/resend.html&quot;&gt;grab an updated copy.&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you&amp;#8217;ve not purchased yet get &lt;a href=&quot;https://www.grails3book.com/early-access.html&quot;&gt;your copy today!&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;A HUGE thank you to the &lt;strong&gt;500+&lt;/strong&gt; people who purchased early access!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;strong_0_8_strong_code_changelog_code&quot;&gt;&lt;strong&gt;0.8&lt;/strong&gt; &lt;code&gt;CHANGELOG&lt;/code&gt;:&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Examples updated to Grails 3.2.11.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Expand REST API Examples.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Front-end Framework section.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Authoring Grails Plugins example.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Feedback &amp;amp; other minor updates.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;road_to_1_0&quot;&gt;Road to 1.0&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The outstanding tasks quite small:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Editors reviews&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Multi Tenancy&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Configuration&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Logging&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Early Access Feedback&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;m pleased to announce that 1.0 will be released at the G3 Summit on &lt;strong&gt;November 28th, 2018!&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;see_you_at_g3_summit&quot;&gt;See you at G3 Summit!&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;ll be presenting at the G3 Summit this year in Austin, TX - November 28 - December 1st 2018.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Better know a Grails Plugin - Thu 7:30 PM&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Automated Strategies for building &amp;amp; deploying Grails with Gradle - Fri 2:45 PM&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Talks abstracts are here: &lt;a href=&quot;https://g3summit.com/conference/austin/2017/11/speakers/eric_helgeson&quot; class=&quot;bare&quot;&gt;https://g3summit.com/conference/austin/2017/11/speakers/eric_helgeson&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;OCI is offering a $200 discount (ending soon) to G3Summit - &lt;a href=&quot;https://objectcomputing.com/news/2017/09/08/weve-got-your-200-discount-g3-summit&quot; class=&quot;bare&quot;&gt;https://objectcomputing.com/news/2017/09/08/weve-got-your-200-discount-g3-summit&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;a_living_book&quot;&gt;A living book&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Please note when you purchase Practical Grails 3 you will receive update through the whole life of Grails 3.x. The book will continue to grow with new features and feedback as Grails grows.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;a_note_on_grails_3_3_x&quot;&gt;A note on Grails 3.3.x&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;ve been tracking changes to the 3.3.x line though have not updated the book examples yet. The main reason is the build-test-data plugin has not been updated yet to support 3.3.x. We use build-test-data extensively in the examples. Due to this the 1.0 release of the book will be on the latest 3.2.x line.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I am considering moving all build-data related tasks to &lt;a href=&quot;https://github.com/agorapulse/dru&quot;&gt;dru&lt;/a&gt; and the new trait testing framework. I would love to hear your feedback on this change.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Note: &lt;strong&gt;0.7&lt;/strong&gt; release was a silent release live on the site since June 22nd 2017.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	  </description>
+    </item>
+    
+    <item>
+      <title>Practical Grails 3 - 0.6 Release</title>
+      <link>https://www.grails3book.com/blog/2017/2017-04-03-grails-book-06.html</link>
+      <pubDate>Mon, 3 Apr 2017 00:00:00 -0500</pubDate>
+      <guid isPermaLink="false">blog/2017/2017-04-03-grails-book-06.html</guid>
+      <description>
+      &lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Hello, Everyone! I&amp;#8217;m excited to announce the 0.6 release of Practical Grails 3. It took a bit longer to get this release out the door than I&amp;#8217;d like. I hope it&amp;#8217;s worth the wait with tons of great content and feedback from 300+ early access readers, thanks! The response has been so much more than I could have anticipated!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you&amp;#8217;ve purchased previously you can &lt;a href=&quot;https://www.grails3book.com/resend.html&quot;&gt;grab an updated copy.&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you&amp;#8217;ve not purchased yet get &lt;a href=&quot;https://www.grails3book.com/early-access.html&quot;&gt;your copy today!&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;ve set the final price at $39.99. I&amp;#8217;ve done this by looking at other similar length and depth books. Don&amp;#8217;t worry, though, the &lt;strong&gt;Early Access price will stay until closer to release&lt;/strong&gt;. No matter what price you purchased the book at you will &lt;strong&gt;always receive updates at no cost&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;My goal is to have the book 100% ready by &lt;a href=&quot;http://gr8conf.us/&quot;&gt;GR8Conf US 2017&lt;/a&gt;! That&amp;#8217;s just 16 weeks away (may seem long to you, but seems short for me!)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;ve also been working on other value added ideas for readers. If you follow me on Twitter you&amp;#8217;ll see I&amp;#8217;ve been putting out &lt;a href=&quot;https://github.com/erichelgeson/grails-versions&quot;&gt;fresh grails-app version diffs&lt;/a&gt; when new releases come out, as well as an unofficial release notes. Here&amp;#8217;s an example from &lt;a href=&quot;https://gist.github.com/erichelgeson/be2f9f62ab63d989f2ec962ae7001f21&quot;&gt;Grails 3.2.8 Upgrade&lt;/a&gt;. I&amp;#8217;ll continue to do these for the community and see what else I can add for readers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;code_changelog_code_for_strong_0_6_strong&quot;&gt;&lt;code&gt;CHANGELOG&lt;/code&gt; for &lt;strong&gt;0.6&lt;/strong&gt;:&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Examples using Grails 3.2.8&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added testing section&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reworked reactor examples&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;All code now pulled from tests or working app&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updated criteria and where queries examples&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TagLib section&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Expanded content in views sections&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Many, many updates and changes based on feedback&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Example code is now published to &lt;a href=&quot;https://gitlab.com/grails-3-book/&quot;&gt;GitLab.com&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Public feedback has been moved to &lt;a href=&quot;https://gitlab.com/grails-3-book/feedback&quot;&gt;GitLab.com&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;strong&gt;0.7&lt;/strong&gt; will be a shorter release cycle than 0.6. And to ensure that I&amp;#8217;m limiting the scope. With all the publishing automation done I can focus on content.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;PDF/EPUB formats&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Authoring Grails Plugins&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Expand REST API Examples&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Configuration&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Public sample chapter (now that there&amp;#8217;s some well edited sections!)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;ve also decided to not update examples to GORM 6.1 until after a few point releases. There&amp;#8217;s a ton of great new things in there but I may roll that into the Grails 3.3 book update.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You&amp;#8217;ll note that I&amp;#8217;ve moved to GitLab. It&amp;#8217;s providing a lot of great features (such as CI, private repos, etc). If you haven&amp;#8217;t checked them out you should! The example code repos are public to clone or download or you can log in with your Github account on GitLab.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Thanks!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	  </description>
+    </item>
+    
+    <item>
+      <title>Grails 3 Book - Update</title>
+      <link>https://www.grails3book.com/blog/2016/2016-11-19-book-update-1.html</link>
+      <pubDate>Sat, 19 Nov 2016 00:00:00 -0600</pubDate>
+      <guid isPermaLink="false">blog/2016/2016-11-19-book-update-1.html</guid>
+      <description>
+      &lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This is the first in bi-weekly updates I&amp;#8217;ll be posting updates on what I&amp;#8217;ve been working on for &lt;a href=&quot;https://www.grails3book.com&quot;&gt;Practical Grails 3&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;reviewers&quot;&gt;Reviewers&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;d like to announce the first two technical reviewers:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/jclynky&quot;&gt;Jaclyn Helgeson&lt;/a&gt; - A Grails and Spring developer. She has a great attention to detail and comes with a strong Grails 2 background.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/rpalcolea&quot;&gt;Roberto Perez&lt;/a&gt; - Active in the Grails community with blog posts and answering questions on Slack, founder of LA GUG as well. Roberto will also be doing the Spanish translation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;progress&quot;&gt;Progress&lt;/h3&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;updated_to_3_2_x&quot;&gt;Updated to 3.2.x&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;When I started writing 3.1 was the latest Grails release. I&amp;#8217;ve been tracking 3.2 with all the new features but until last week I was unable to update the book because of a few plugins. I&amp;#8217;ve worked with the plugins authors and happy to say the first copy of the book will ship with the latest 3.2 release as the examples!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;automation&quot;&gt;Automation&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;One main goal of this book is to be a living book, when new releases of the Grails 3 are released, there will be an update with new features and a changelog. To this end I&amp;#8217;ve been playing with ways to allow me to easily change things (like the Grails version) and apply them through all the examples. With some git trickery and bash glue I have a pretty good system down!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;building_and_testing&quot;&gt;Building and testing&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The basics of the unit and integration tests chapters are flushed out.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;release&quot;&gt;Release&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;ve decided to not release a sample chapter until the early access is released in mid December. This is mostly due to the book content moving around.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;That said early access is still on track for this December!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;up_next&quot;&gt;Up next&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;line-through&quot;&gt;I&amp;#8217;ve setup a public &lt;a href=&quot;https://trello.com/b/IEvaBBBq/progress&quot;&gt;Trello board&lt;/a&gt; if you&amp;#8217;d like to track progress. Please note not all tasks are here, but I&amp;#8217;ll begin posting more.&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Status updates are now tracked on the &lt;a href=&quot;https://gitlab.com/grails-3-book/feedback&quot;&gt;feedback issue tracker&lt;/a&gt; - easier to have them all in one location!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;stats&quot;&gt;Stats&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;A few stats:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Over 350 people have signed to be notified when the book is published. You can sign up too at &lt;a href=&quot;https://www.grails3book.com&quot; class=&quot;bare&quot;&gt;https://www.grails3book.com&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;82 Followers on Twitter - I&amp;#8217;ll be putting more updates out via Twitter to grow this audience as well.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;not_a_walk_in_the_park&quot;&gt;Not a walk in the park&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Writing a book isn&amp;#8217;t easy - I knew this when I started. Inspiration, time, and life don&amp;#8217;t always line up to allow progress to move as fast as I&amp;#8217;d like. Kind words, encouragement from the community, and the desire to learn more keep this book moving forward.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	  </description>
+    </item>
+    
+    <item>
+      <title>Grails 3 Book - Practical Grails 3</title>
+      <link>https://www.grails3book.com/blog/2016/2016-09-21-grails-3-book.html</link>
+      <pubDate>Wed, 21 Sep 2016 00:00:00 -0500</pubDate>
+      <guid isPermaLink="false">blog/2016/2016-09-21-grails-3-book.html</guid>
+      <description>
+      &lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;m excited to announce that I&amp;#8217;ve been working on a book for the Grails 3 framework - &lt;a href=&quot;https://www.grails3book.com&quot;&gt;Practical Grails 3&lt;/a&gt;!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The question of &quot;Will there be a Grails 3 book?&quot; has been on the mind of many of you. I&amp;#8217;ve been working on this book for the past 6 months and am very excited to share that it&amp;#8217;s almost here!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This is the first book dedicated to the latest Grails 3 framework. It is a practical guide to Grails which will get beginners started quickly, intermediate users will learn best practices and advanced users will learn something new as well.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The book covers the concepts behind many of the best practices when building a Grails 3 application. I cover the full life cycle from getting your environment setup to production deployment and everything in-between.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The second half of the book is dedicated to building a non-trivial application using and expanding on the concepts learned. I&amp;#8217;ll cover best practices, common gotcha&amp;#8217;s, plugins, spring boot, deployments, monitoring, and a whole lot more.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This is a living book. There will be regular updates when versions of Grails 3 are released covering the changes and new features.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Don&amp;#8217;t forget to sign up to get notified when it becomes available at &lt;a href=&quot;https://www.grails3book.com&quot; class=&quot;bare&quot;&gt;https://www.grails3book.com&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;faq&quot;&gt;FAQ&lt;/h3&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;when_will_practical_grails_3_be_released&quot;&gt;When will Practical Grails 3 be released?&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The rough schedule is:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Out to first reviewers &amp;amp; free sample chapter - October&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Early Access (discounted price) - December&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Release - Q1 2017&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Sign up for the email notification on &lt;a href=&quot;https://www.grails3book.com&quot; class=&quot;bare&quot;&gt;https://www.grails3book.com&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Follow me on Twitter &lt;a href=&quot;https://twitter.com/grails3book&quot;&gt;@grails3book&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;how_much_will_it_cost&quot;&gt;How much will it cost?&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;No price set yet but will be in line with other technical books it&amp;#8217;s size and depth.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;why_are_you_writing_this_book&quot;&gt;Why are you writing this book?&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;ve been part of the Grails community for a while now and wanted to give something back and build something that will help our community grow!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;you_should_include_x&quot;&gt;You should include X!&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;d love your feedback! &lt;a href=&quot;https://twitter.com/grails3book&quot;&gt;@grails3book&lt;/a&gt; or &lt;a href=&quot;mailto:info@grails3book.com&quot;&gt;info@grails3book.com&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;will_there_be_any_print_copies&quot;&gt;Will there be any print copies?&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;No current plans on a physical printed copy.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;will_there_be_any_translations&quot;&gt;Will there be any translations?&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;m only an english speaker but I know that Grails developers come from many different countries and speak different languages. If you would be interested in doing a translation of the book please let me know.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	  </description>
+    </item>
+    
+
+  </channel> 
+</rss>

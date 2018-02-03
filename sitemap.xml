@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <url>
+    	<loc>https://www.grails3book.com/purchase.html</loc>
+    	<lastmod>2017-12-31</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://www.grails3book.com/resend.html</loc>
+    	<lastmod>2017-12-31</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://www.grails3book.com/thanks.html</loc>
+    	<lastmod>2017-12-31</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://www.grails3book.com/blog/2018/2018-01-27-grails-book--1.1-release.html</loc>
+    	<lastmod>2018-01-27</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://www.grails3book.com/blog/2017/2017-12-01-grails-book-release.html</loc>
+    	<lastmod>2017-12-01</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://www.grails3book.com/blog/2017/2017-08-26-grails-book-08.html</loc>
+    	<lastmod>2017-08-26</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://www.grails3book.com/blog/2017/2017-04-03-grails-book-06.html</loc>
+    	<lastmod>2017-04-03</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://www.grails3book.com/blog/2016/2016-11-19-book-update-1.html</loc>
+    	<lastmod>2016-11-19</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://www.grails3book.com/blog/2016/2016-09-21-grails-3-book.html</loc>
+    	<lastmod>2016-09-21</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://www.grails3book.com/early-access.html</loc>
+    	<lastmod>2017-12-31</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://www.grails3book.com/blog.html</loc>
+    	<lastmod>2017-12-31</lastmod>
+    </url>
+
+</urlset>

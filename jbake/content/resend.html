@@ -1,0 +1,54 @@
+title=Resend
+date=2017-12-31
+type=page
+status=published
+~~~~~~
+
+  <section id="author" class="sec-wrap">
+    <div class="container">
+      <div class="row">
+        <!--col-xs-12-->
+        <div class="col-xs-10 col-xs-offset-1">
+          <div class="media">
+            <p>
+                <a class="pull-left" href="/"><img class="media-object" src="/images/pratical-grails-3-book-cover.png" alt="Pratical Grails 3 Book Cover" width="228" height="316" /></a>
+            </p>
+            <div class="media-body">
+                <form class="form-inline" method="POST" action="https://api.grails3book.com/book/resend" onsubmit="submitButton.disabled = true; return true;">
+                  <p>Enter the Email address you used to purchase the book.</p>
+                  <div class="form-group">
+                    <input type="email" name="email" class="form-control" required>
+                  </div>
+                  <button class="btn btn-primary" type="submit" name="submitButton" value="Resend">Resend</button>
+                </form>
+            </div>
+            <hr/>
+            <p>Need help? <a href="mailto:info@grails3book.com">info@grails3book.com</a></p>
+            <!--/media-body-->
+          </div>
+          <!--/media-->
+        </div>
+        <!--col-xs-10-->
+      </div>
+      <!--/row-->
+    </div>
+    <!--/container-->
+  </section>
+  <!--/inside-->
+
+  <div id="paymentModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Finalizing Transaction...</h4>
+        </div>
+        <div class="modal-body">
+          <p><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i><span class="sr-only">Loading...</span></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->

@@ -6,8 +6,8 @@
   <meta content="width=device-width,initial-scale=1" name=viewport>
   <meta content="Grails 3 Book - The first book dedicated to Grails 3" name="description">
   <meta content="Eric Helgeson" name="author">
-  <title>Resend</title>
-  <link rel="shortcut icon" href="favicon.ico">
+  <title>Practical Grails 3 - 1.0 Release</title>
+  <link rel="shortcut icon" href="../../favicon.ico">
 
   <!--[if lt IE 9]>
   <script src=https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js></script>
@@ -20,14 +20,15 @@
 
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
-  <link href="css/asciidoctor.css" rel="stylesheet">
-  <link href="css/base.css" rel="stylesheet">
-  <link href="css/prettify.css" rel="stylesheet">
+  <link href="../../css/asciidoctor.css" rel="stylesheet">
+  <link href="../../css/base.css" rel="stylesheet">
+  <link href="../../css/prettify.css" rel="stylesheet">
 
-  <link href="css/style.css" rel="stylesheet">
+  <link href="../../css/style.css" rel="stylesheet">
 
 </head>
 <body>
+
 
   <header id="marketing" style="min-height: auto;">
   <div class="container">
@@ -47,55 +48,92 @@
   </div>
 </header>
 
-  
+
   <section id="author" class="sec-wrap">
     <div class="container">
       <div class="row">
         <!--col-xs-12-->
-        <div class="col-xs-10 col-xs-offset-1">
+        <div class="col-xs-12">
           <div class="media">
-            <p>
-                <a class="pull-left" href="/"><img class="media-object" src="/images/pratical-grails-3-book-cover.png" alt="Pratical Grails 3 Book Cover" width="228" height="316" /></a>
-            </p>
             <div class="media-body">
-                <form class="form-inline" method="POST" action="https://api.grails3book.com/book/resend" onsubmit="submitButton.disabled = true; return true;">
-                  <p>Enter the Email address you used to purchase the book.</p>
-                  <div class="form-group">
-                    <input type="email" name="email" class="form-control" required>
-                  </div>
-                  <button class="btn btn-primary" type="submit" name="submitButton" value="Resend">Resend</button>
-                </form>
+                <h2>Practical Grails 3 - 1.0 Release</h2>
+                <hr style="margin:0px;"/>
+                <p><small><em>December 01, 2017</em></small></p>
+                <p><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Hello, Everyone! I&#8217;m excited to announce the <code>1.0</code> release of Practical Grails 3!</p>
+</div>
+<div class="paragraph">
+<p>If you&#8217;ve purchased previously you can <a href="https://www.grails3book.com/resend.html">grab an updated copy.</a></p>
+</div>
+<div class="paragraph">
+<p>If you&#8217;ve not purchased yet get <a href="https://www.grails3book.com/early-access.html">your copy today!</a></p>
+</div>
+<div class="paragraph">
+<p>A HUGE thank you to the <strong>500+</strong> people who purchased early access!</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+The book will stay Early Access price until 12/7, so grab your copy today!
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="living_book">Living Book</h3>
+<div class="paragraph">
+<p>The 1.0 release is not the end - it&#8217;s the beginning! I have been working on the 3.3.x branch updates for a while but there is so much new I wanted the 1.0 to be based off Grails 3.2.
+Please note when you purchase Practical Grails 3 you will receive update through the whole life of Grails 3.x.</p>
+</div>
+<div class="paragraph">
+<p>The book will continue to grow with new features and feedback as Grails grows.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="planned_for_1_1">Planned for 1.1</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Grails 3.3.x</p>
+</li>
+<li>
+<p>Data Services</p>
+</li>
+<li>
+<p>GraphQL intro</p>
+</li>
+<li>
+<p>More deployment scenarios</p>
+</li>
+<li>
+<p>Feedback from you!</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="g3_summit">G3 Summit</h3>
+<div class="paragraph">
+<p>I had a great time at the G3 Summit this year - check out my recap blog post!</p>
+</div>
+<div class="paragraph">
+<p><a href="https://erichelgeson.github.io/blog/2017/12/02/g3summit/" class="bare">https://erichelgeson.github.io/blog/2017/12/02/g3summit/</a></p>
+</div>
+</div></p>
             </div>
-            <hr/>
-            <p>Need help? <a href="mailto:info@grails3book.com">info@grails3book.com</a></p>
-            <!--/media-body-->
           </div>
-          <!--/media-->
         </div>
-        <!--col-xs-10-->
       </div>
-      <!--/row-->
     </div>
-    <!--/container-->
   </section>
-  <!--/inside-->
-
-  <div id="paymentModal" class="modal fade" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title">Finalizing Transaction...</h4>
-        </div>
-        <div class="modal-body">
-          <p><i class="fa fa-refresh fa-spin fa-3x fa-fw"></i><span class="sr-only">Loading...</span></p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
 
   <footer>
     <div class="container">
@@ -110,7 +148,7 @@
   </body>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="js/ga.js"></script>
-  <script src="js/prettify.js"></script>
+  <script src="../../js/ga.js"></script>
+  <script src="../../js/prettify.js"></script>
 </html>
 

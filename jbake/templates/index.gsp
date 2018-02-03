@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset=utf-8>
-  <meta content="IE=edge" http-equiv=X-UA-Compatible>
-  <meta content="width=device-width,initial-scale=1" name=viewport>
-  <meta content="Grails 3 Book - The first book dedicated to Grails 3" name="description">
-  <meta content="Eric Helgeson" name="author">
-  <title>Grails 3 Book</title>
-  <link rel="shortcut icon" href="favicon.ico">
-
-  <!--[if lt IE 9]>
-  <script src=https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js></script>
-  <script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script>
-  <![endif]-->
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-
-  <link href="css/asciidoctor.css" rel="stylesheet">
-  <link href="css/base.css" rel="stylesheet">
-  <link href="css/prettify.css" rel="stylesheet">
-
-  <link href="css/style.css" rel="stylesheet">
-
-</head>
-<body>
-
+<%include "header.gsp"%>
 
 <header id="marketing">
   <div class="container">
@@ -49,7 +19,7 @@
           <div class="row">
             <div class="col-md-5 text-center">
               <div class="marketing-media">
-                <img src="images/pratical-grails-3-book-cover.png" alt="Pratical Grails 3 Book Cover" width="228" height="316" />
+                <img src="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>images/pratical-grails-3-book-cover.png" alt="Pratical Grails 3 Book Cover" width="228" height="316" />
               </div>
             </div>
             <div class="col-md-7">
@@ -224,20 +194,4 @@
 </section>
 <!--/inside-->
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <p class="text-center">&copy; <a href="mailto:info@grails3book.com">Eric Helgeson</a>, Pratical Grails 3. All rights reserved. <a href="/blog.html">Blog</a> </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-  </div>
-  </body>
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="js/ga.js"></script>
-  <script src="js/prettify.js"></script>
-</html>
-
+<%include "footer.gsp"%>

@@ -1,0 +1,25 @@
+= Practical Grails 3 - 1.1 Release
+Eric Helgeson
+2018-01-27
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: blog
+:jbake-description: Updates & what's new in the Practical Grails 3 - 1.1!
+:idprefix:
+
+I'm excited to announce *Practical Grails 3* `1.1` has been released!
+
+If you've purchased previously you can https://www.grails3book.com/resend.html[grab an updated copy.]
+
+If you've not purchased yet get https://www.grails3book.com/early-access.html[your copy today!]
+
+=== Changelog
+
+* Updated all examples to Grails 3.3.2.
+* Updated examples to use new trait unit testing framework.
+* Added upgrade guide to appendix for Grails 3.2 -> 3.3.
+* Updates and clarifications based on feedback from readers.
+
+=== Website Updates
+
+This website and blog are now powered by http://jbake.org/[JBake]!
