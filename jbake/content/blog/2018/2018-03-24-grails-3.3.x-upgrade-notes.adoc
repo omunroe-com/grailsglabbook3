@@ -1,0 +1,97 @@
+= Grails 3.3.x Upgrade Notes
+Eric Helgeson
+2018-03-24
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: blog, upgrade
+:jbake-description: Notes
+:idprefix:
+
+## Current Release - 3.3.3
+
+* ***3.3.0 - 07/26/2017***
+* ***3.3.0.RC1 - Current release 06/26/2017***
+* ***3.3.0.M2 - Current release 05/30/2017***
+* ***3.3.0.M1 - Released 05/09/2017***
+
+NOTE: If you have anything to add, please let me know! info@grails3book.com
+
+### Documentation
+
+Whats new in Grails
+
+  * http://docs.grails.org/3.3.x/guide/introduction.html#whatsNew
+
+Whats new in GORM 6.1 (Default in 3.3)
+
+  * http://gorm.grails.org/6.1.x/whatsNew/manual/
+  * http://gorm.grails.org/latest/hibernate/manual/index.html#upgradeNotes
+
+Upgrading from 3.2.x to 3.3
+
+  * http://docs.grails.org/3.3.x/guide/upgrading.html
+
+Fresh app diffs 3.2.11 -> 3.3.3
+
+  * https://github.com/erichelgeson/grails-versions/compare/3.2.11...3.3.3
+
+### Notable changes
+
+* New Trait based testing framework
+  - Docs https://testing.grails.org/latest/guide/index.html
+  - Can still use the old `@TestFor` annotations with
+    - `testCompile "org.grails:grails-test-mixins:3.3.0"`
+* Spring Boot 1.5.8
+* Autowire of domain classes off by default (since 3.2.9)
+  - can be enabled per domain now if required in 3.3
+    - `static mapping = { autowire true }`
+* Improved support for Multi-tenancy in GORM & GORM data services
+* Distribution and Packaging sizes [greatly reduced](https://twitter.com/grailsframework/status/862196110076641280).
+* Unified and pluggable events/async - breaking change to pervious async
+  - http://async.grails.org/latest/guide/index.html
+* Transactional & ReadOnly annotations moved to GORM
+  - Update all imports & annotations with
+    - `grep -rl 'grails.transaction.Transactional' . | xargs sed -i '' -e 's/grails.transaction.Transactional/grails.gorm.transactions.Transactional/g'`
+    - `grep -rl '@Transactional(readOnly=true)' . | xargs sed -i '' -e 's/@Transactional(readOnly=true)/@ReadOnly/g'`
+* Logger names changed for Grails artefacts
+  - Now simply use package names
+  - http://docs.grails.org/latest/guide/conf.html#loggerName
+* New default dependancies
+  - Artefacts like controllers and services may not work properly if not included
+  - See diff https://github.com/erichelgeson/grails-versions/compare/3.2.11...3.3.2#diff-0a2349eea38294b2043ce02124b37cb3
+
+### Known Issues
+
+* `grails-spring-security-oauth2-provider` (Filters)
+  - https://github.com/bluesliverx/grails-spring-security-oauth2-provider/issues/140
+
+### Resolved Issues
+
+* **IMPORTANT** Quartz job property changes
+  - https://github.com/grails-plugins/grails-quartz/issues/91
+  - Jobs will just not run silently if the properties are not changed from `def` to `static`
+
+* build-test-data
+  - Use 3.3.0.RC1+ - with new Trait framework.
+
+* Spring-Session (redis)
+  - Dependancy changes
+    - `compile "org.springframework.session:spring-session-data-redis"`
+  - (work around) Autoconfigure did not work - had to set `spring.session.'store-type' = 'redis'` in application.groovy/yml
+
+* Startup issue when using `grails-spring-websocket`
+  - `Field springTaskExecutor in org.grails.events.bus.spring.EventBusFactoryBean required a single bean, but 4 were found`
+  - https://github.com/grails/grails-async/issues/4
+
+* Spring-Security core updated for Grails 3.3
+  - Change to `compile 'org.grails.plugins:spring-security-core:3.2.0'`
+  - https://github.com/grails-plugins/grails-spring-security-core/pull/491
+  - Due to breaking change in spring-boot 1.5
+
+* GrailsCompileStatic & CompileStatic throw exception in valid uses
+  - Add `compile "org.grails.plugins:events:3.3.0.RC1"` to work around
+  - https://github.com/grails/grails-core/issues/10638
+
+* Sentry plugin `FilterRegistrationBean` package changed
+  - https://github.com/agorapulse/grails-sentry/issues/28
+  - Use `compile 'org.grails.plugins:sentry:8.0.3'`
