@@ -1,0 +1,93 @@
+= Using Tomcat Native in Grails 3
+Eric Helgeson
+2018-03-27
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: blog
+:jbake-description: Tomcat native provides native extensions which may give you a performance boost in you Grails 3 app.
+:idprefix:
+
+
+## Introduction
+
+https://tomcat.apache.org/native-doc/[Tomcat Native] is a set of native extensions that can improve performance and compatibility - best said directly from the docs:
+
+====
+The Apache Tomcat Native Library is an optional component for use with Apache Tomcat that allows Tomcat to use certain native resources for performance, compatibility, etc.
+
+Specifically, the Apache Tomcat Native Library gives Tomcat access to the Apache Portable Runtime (APR) library's network connection (socket) implementation and random-number generator. See the Apache Tomcat documentation for more information on how to configure Tomcat to use the APR connector.
+
+Features of the APR connector:
+
+Non-blocking I/O for Keep-Alive requests (between requests)
+
+Uses OpenSSL for TLS/SSL capabilities (if supported by linked APR library)
+
+FIPS 140-2 support for TLS/SSL (if supported by linked OpenSSL library)
+====
+
+Grails uses Tomcat as it's default container and if you've ever turned up logging while starting your Grails app you may have seen:
+
+`The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path`
+
+Well of course I want **optimal performance** in my production environment!
+
+## Installing Tomcat native
+
+These days most distributions come with a `tomcat-native` package. All you need to do is install and configure it.
+
+### Configuration
+
+In our Grails application we will need to customize the embedded Tomcat to enable `apr`. We can add this little snipit to our `Application.groovy` class to add the APR connector:
+
+.grails-app/init/package/Application.groovy
+```groovy
+@Bean 
+EmbeddedServletContainerFactory servletContainer() { 
+    TomcatEmbeddedServletContainerFactory container = new TomcatEmbeddedServletContainerFactory()
+     LifecycleListener arpLifecycle = new AprLifecycleListener() 
+    container.setProtocol("org.apache.coyote.http11.Http11AprProtocol") 
+    container.addContextLifecycleListeners(arpLifecycle)  
+    container 
+}
+```
+
+### Install native extensions
+
+To take advantage of APR we need to install the platform specific package.
+
+* Mac
+  - `brew install tomcat-native`
+* Centos/Amazon/RedHat
+  - `yum install tomcat-native`
+
+#### Adding it to your JVM_OPTS
+
+If your distributions doesn't install it in the "default" library path (eg: homebrew), you'll have to add it to your JVM opts:
+
+.build.gradle
+```groovy
+bootRun { 
+  jvmArgs('-Dspring.output.ansi.enabled=always', '-Djava.library.path=/usr/local/opt/tomcat-native/lib') 
+  addResources = true 
+}
+```
+
+Or the JVM opts you use when starting tomcat on your server.
+
+### Is it working?
+
+If you see the `http-apr` protocols starting, you'll know it's working:
+
+```
+Initializing ProtocolHandler ["http-apr-8080"]
+Starting ProtocolHandler ["http-apr-8080"]
+```
+
+## Conclusion
+
+Tomcat-native provides some performance improvements and is not to difficult to setup. Always do your own benchmarks and testing to see if it provides you with a performance boost.
+
+## See Also
+
+https://blog.eveoh.nl/2012/04/some-notes-on-tomcat-connector-performance/

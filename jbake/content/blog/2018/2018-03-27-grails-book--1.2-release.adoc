@@ -1,0 +1,19 @@
+= Practical Grails 3 - 1.2 Release
+Eric Helgeson
+2018-03-27
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: blog
+:jbake-description: Updates & what's new in the Practical Grails 3 - 1.2!
+:idprefix:
+
+I'm excited to announce *Practical Grails 3* `1.2` has been released!
+
+If you've purchased previously you can https://www.grails3book.com/resend.html[grab an updated copy.]
+
+If you've not purchased yet get https://www.grails3book.com/early-access.html[your copy today!]
+
+=== Changelog
+
+* Updated all examples to Grails 3.3.3.
+* Updates and clarifications based on feedback from readers.

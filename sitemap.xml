@@ -17,6 +17,16 @@
     </url>
 
     <url>
+    	<loc>https://www.grails3book.com/blog/2018/2018-03-27-grails-book--1.2-release.html</loc>
+    	<lastmod>2018-03-27</lastmod>
+    </url>
+
+    <url>
+    	<loc>https://www.grails3book.com/blog/2018/2018-03-27-tomcat-native.html</loc>
+    	<lastmod>2018-03-27</lastmod>
+    </url>
+
+    <url>
     	<loc>https://www.grails3book.com/blog/2018/2018-03-24-grails-3.3.x-upgrade-notes.html</loc>
     	<lastmod>2018-03-24</lastmod>
     </url>

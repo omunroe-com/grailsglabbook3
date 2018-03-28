@@ -6,9 +6,195 @@
     <atom:link href="https://www.grails3book.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Wed, 14 Mar 2018 17:38:07 -0500</pubDate>
-    <lastBuildDate>Wed, 14 Mar 2018 17:38:07 -0500</lastBuildDate>
+    <pubDate>Tue, 27 Mar 2018 19:55:16 -0500</pubDate>
+    <lastBuildDate>Tue, 27 Mar 2018 19:55:16 -0500</lastBuildDate>
 
+    
+    <item>
+      <title>Practical Grails 3 - 1.2 Release</title>
+      <link>https://www.grails3book.com/blog/2018/2018-03-27-grails-book--1.2-release.html</link>
+      <pubDate>Tue, 27 Mar 2018 00:00:00 -0500</pubDate>
+      <guid isPermaLink="false">blog/2018/2018-03-27-grails-book--1.2-release.html</guid>
+      <description>
+      &lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;m excited to announce &lt;strong&gt;Practical Grails 3&lt;/strong&gt; &lt;code&gt;1.2&lt;/code&gt; has been released!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you&amp;#8217;ve purchased previously you can &lt;a href=&quot;https://www.grails3book.com/resend.html&quot;&gt;grab an updated copy.&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you&amp;#8217;ve not purchased yet get &lt;a href=&quot;https://www.grails3book.com/early-access.html&quot;&gt;your copy today!&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;changelog&quot;&gt;Changelog&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Updated all examples to Grails 3.3.3.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updates and clarifications based on feedback from readers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	  </description>
+    </item>
+    
+    <item>
+      <title>Using Tomcat Native in Grails 3</title>
+      <link>https://www.grails3book.com/blog/2018/2018-03-27-tomcat-native.html</link>
+      <pubDate>Tue, 27 Mar 2018 00:00:00 -0500</pubDate>
+      <guid isPermaLink="false">blog/2018/2018-03-27-tomcat-native.html</guid>
+      <description>
+      &lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://tomcat.apache.org/native-doc/&quot;&gt;Tomcat Native&lt;/a&gt; is a set of native extensions that can improve performance and compatibility - best said directly from the docs:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;exampleblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache Tomcat Native Library is an optional component for use with Apache Tomcat that allows Tomcat to use certain native resources for performance, compatibility, etc.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Specifically, the Apache Tomcat Native Library gives Tomcat access to the Apache Portable Runtime (APR) library&amp;#8217;s network connection (socket) implementation and random-number generator. See the Apache Tomcat documentation for more information on how to configure Tomcat to use the APR connector.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Features of the APR connector:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Non-blocking I/O for Keep-Alive requests (between requests)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Uses OpenSSL for TLS/SSL capabilities (if supported by linked APR library)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;FIPS 140-2 support for TLS/SSL (if supported by linked OpenSSL library)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Grails uses Tomcat as it&amp;#8217;s default container and if you&amp;#8217;ve ever turned up logging while starting your Grails app you may have seen:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;code&gt;The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Well of course I want &lt;strong&gt;optimal performance&lt;/strong&gt; in my production environment!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;installing_tomcat_native&quot;&gt;Installing Tomcat native&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;These days most distributions come with a &lt;code&gt;tomcat-native&lt;/code&gt; package. All you need to do is install and configure it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;configuration&quot;&gt;Configuration&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In our Grails application we will need to customize the embedded Tomcat to enable &lt;code&gt;apr&lt;/code&gt;. We can add this little snipit to our &lt;code&gt;Application.groovy&lt;/code&gt; class to add the APR connector:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;grails-app/init/package/Application.groovy&lt;/div&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-groovy&quot; data-lang=&quot;groovy&quot;&gt;@Bean 
+EmbeddedServletContainerFactory servletContainer() { 
+    TomcatEmbeddedServletContainerFactory container = new TomcatEmbeddedServletContainerFactory()
+     LifecycleListener arpLifecycle = new AprLifecycleListener() 
+    container.setProtocol(&quot;org.apache.coyote.http11.Http11AprProtocol&quot;) 
+    container.addContextLifecycleListeners(arpLifecycle)  
+    container 
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;install_native_extensions&quot;&gt;Install native extensions&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To take advantage of APR we need to install the platform specific package.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Mac&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;brew install tomcat-native&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Centos/Amazon/RedHat&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;yum install tomcat-native&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;adding_it_to_your_jvm_opts&quot;&gt;Adding it to your JVM_OPTS&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If your distributions doesn&amp;#8217;t install it in the &quot;default&quot; library path (eg: homebrew), you&amp;#8217;ll have to add it to your JVM opts:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;build.gradle&lt;/div&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-groovy&quot; data-lang=&quot;groovy&quot;&gt;bootRun { 
+  jvmArgs(&apos;-Dspring.output.ansi.enabled=always&apos;, &apos;-Djava.library.path=/usr/local/opt/tomcat-native/lib&apos;) 
+  addResources = true 
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Or the JVM opts you use when starting tomcat on your server.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;is_it_working&quot;&gt;Is it working?&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you see the &lt;code&gt;http-apr&lt;/code&gt; protocols starting, you&amp;#8217;ll know it&amp;#8217;s working:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code&gt;Initializing ProtocolHandler [&quot;http-apr-8080&quot;]
+Starting ProtocolHandler [&quot;http-apr-8080&quot;]&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Tomcat-native provides some performance improvements and is not to difficult to setup. Always do your own benchmarks and testing to see if it provides you with a performance boost.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;see_also&quot;&gt;See Also&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.eveoh.nl/2012/04/some-notes-on-tomcat-connector-performance/&quot; class=&quot;bare&quot;&gt;https://blog.eveoh.nl/2012/04/some-notes-on-tomcat-connector-performance/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	  </description>
+    </item>
     
     <item>
       <title>Grails 3.3.x Upgrade Notes</title>

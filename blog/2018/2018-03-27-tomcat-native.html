@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset=utf-8>
+  <meta content="IE=edge" http-equiv=X-UA-Compatible>
+  <meta content="width=device-width,initial-scale=1" name=viewport>
+  <meta content="Grails 3 Book - The first book dedicated to Grails 3" name="description">
+  <meta content="Eric Helgeson" name="author">
+  <title>Using Tomcat Native in Grails 3</title>
+  <link rel="shortcut icon" href="../../favicon.ico">
+
+  <!--[if lt IE 9]>
+  <script src=https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js></script>
+  <script src=https://oss.maxcdn.com/respond/1.4.2/respond.min.js></script>
+  <![endif]-->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+  <link href="../../css/asciidoctor.css" rel="stylesheet">
+  <link href="../../css/base.css" rel="stylesheet">
+  <link href="../../css/prettify.css" rel="stylesheet">
+
+  <link href="../../css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+  <header id="marketing" style="min-height: auto;">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="header-inner" style="border-bottom: 0px">
+          <a class="logo pull-left" href="/">Practical Grails 3</a>
+          <div class="header-icons text-right pull-right">
+            <a href="/blog.html" about="_blank" alt="Blog"><i class="fa fa-newspaper-o" aria-hidden="true"></i></a>
+            <a href="https://gitlab.com/grails-3-book/" about="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/grails3book" about="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="mailto:info@grails3book.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <section id="author" class="sec-wrap">
+    <div class="container">
+      <div class="row">
+        <!--col-xs-12-->
+        <div class="col-xs-12">
+          <div class="media">
+            <div class="media-body">
+                <h2>Using Tomcat Native in Grails 3</h2>
+                <hr style="margin:0px;"/>
+                <p><small><em>March 27, 2018</em></small></p>
+                <p><div class="sect1">
+<h2 id="introduction">Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://tomcat.apache.org/native-doc/">Tomcat Native</a> is a set of native extensions that can improve performance and compatibility - best said directly from the docs:</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>The Apache Tomcat Native Library is an optional component for use with Apache Tomcat that allows Tomcat to use certain native resources for performance, compatibility, etc.</p>
+</div>
+<div class="paragraph">
+<p>Specifically, the Apache Tomcat Native Library gives Tomcat access to the Apache Portable Runtime (APR) library&#8217;s network connection (socket) implementation and random-number generator. See the Apache Tomcat documentation for more information on how to configure Tomcat to use the APR connector.</p>
+</div>
+<div class="paragraph">
+<p>Features of the APR connector:</p>
+</div>
+<div class="paragraph">
+<p>Non-blocking I/O for Keep-Alive requests (between requests)</p>
+</div>
+<div class="paragraph">
+<p>Uses OpenSSL for TLS/SSL capabilities (if supported by linked APR library)</p>
+</div>
+<div class="paragraph">
+<p>FIPS 140-2 support for TLS/SSL (if supported by linked OpenSSL library)</p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Grails uses Tomcat as it&#8217;s default container and if you&#8217;ve ever turned up logging while starting your Grails app you may have seen:</p>
+</div>
+<div class="paragraph">
+<p><code>The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path</code></p>
+</div>
+<div class="paragraph">
+<p>Well of course I want <strong>optimal performance</strong> in my production environment!</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="installing_tomcat_native">Installing Tomcat native</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>These days most distributions come with a <code>tomcat-native</code> package. All you need to do is install and configure it.</p>
+</div>
+<div class="sect2">
+<h3 id="configuration">Configuration</h3>
+<div class="paragraph">
+<p>In our Grails application we will need to customize the embedded Tomcat to enable <code>apr</code>. We can add this little snipit to our <code>Application.groovy</code> class to add the APR connector:</p>
+</div>
+<div class="listingblock">
+<div class="title">grails-app/init/package/Application.groovy</div>
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-groovy" data-lang="groovy">@Bean 
+EmbeddedServletContainerFactory servletContainer() { 
+    TomcatEmbeddedServletContainerFactory container = new TomcatEmbeddedServletContainerFactory()
+     LifecycleListener arpLifecycle = new AprLifecycleListener() 
+    container.setProtocol("org.apache.coyote.http11.Http11AprProtocol") 
+    container.addContextLifecycleListeners(arpLifecycle)  
+    container 
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="install_native_extensions">Install native extensions</h3>
+<div class="paragraph">
+<p>To take advantage of APR we need to install the platform specific package.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Mac</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>brew install tomcat-native</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Centos/Amazon/RedHat</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>yum install tomcat-native</code></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="adding_it_to_your_jvm_opts">Adding it to your JVM_OPTS</h4>
+<div class="paragraph">
+<p>If your distributions doesn&#8217;t install it in the "default" library path (eg: homebrew), you&#8217;ll have to add it to your JVM opts:</p>
+</div>
+<div class="listingblock">
+<div class="title">build.gradle</div>
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-groovy" data-lang="groovy">bootRun { 
+  jvmArgs('-Dspring.output.ansi.enabled=always', '-Djava.library.path=/usr/local/opt/tomcat-native/lib') 
+  addResources = true 
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Or the JVM opts you use when starting tomcat on your server.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="is_it_working">Is it working?</h3>
+<div class="paragraph">
+<p>If you see the <code>http-apr</code> protocols starting, you&#8217;ll know it&#8217;s working:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>Initializing ProtocolHandler ["http-apr-8080"]
+Starting ProtocolHandler ["http-apr-8080"]</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="conclusion">Conclusion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Tomcat-native provides some performance improvements and is not to difficult to setup. Always do your own benchmarks and testing to see if it provides you with a performance boost.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="see_also">See Also</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://blog.eveoh.nl/2012/04/some-notes-on-tomcat-connector-performance/" class="bare">https://blog.eveoh.nl/2012/04/some-notes-on-tomcat-connector-performance/</a></p>
+</div>
+</div>
+</div></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <p class="text-center">&copy; <a href="mailto:info@grails3book.com">Eric Helgeson</a>, Pratical Grails 3. All rights reserved. <a href="/blog.html">Blog</a> </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="../../js/ga.js"></script>
+  <script src="../../js/prettify.js"></script>
+</html>
+
