@@ -6,8 +6,8 @@
     <atom:link href="https://www.grails3book.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Tue, 27 Mar 2018 19:57:23 -0500</pubDate>
-    <lastBuildDate>Tue, 27 Mar 2018 19:57:23 -0500</lastBuildDate>
+    <pubDate>Tue, 27 Mar 2018 20:48:41 -0500</pubDate>
+    <lastBuildDate>Tue, 27 Mar 2018 20:48:41 -0500</lastBuildDate>
 
     
     <item>
@@ -269,12 +269,12 @@ If you have anything to add, please let me know! &lt;a href=&quot;mailto:info@gr
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Fresh app diffs 3.2.11 &amp;#8594; 3.3.3&lt;/p&gt;
+&lt;p&gt;Fresh app diffs 3.2.12 &amp;#8594; 3.3.3&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/erichelgeson/grails-versions/compare/3.2.11&amp;#8230;&amp;#8203;3.3.3&quot; class=&quot;bare&quot;&gt;https://github.com/erichelgeson/grails-versions/compare/3.2.11&amp;#8230;&amp;#8203;3.3.3&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/erichelgeson/grails-versions/compare/3.2.12&amp;#8230;&amp;#8203;3.3.3&quot; class=&quot;bare&quot;&gt;https://github.com/erichelgeson/grails-versions/compare/3.2.12&amp;#8230;&amp;#8203;3.3.3&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -319,7 +319,10 @@ If you have anything to add, please let me know! &lt;a href=&quot;mailto:info@gr
 &lt;p&gt;Improved support for Multi-tenancy in GORM &amp;amp; GORM data services&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Distribution and Packaging sizes [greatly reduced](&lt;a href=&quot;https://twitter.com/grailsframework/status/862196110076641280&quot; class=&quot;bare&quot;&gt;https://twitter.com/grailsframework/status/862196110076641280&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Distribution and Packaging sizes &lt;a href=&quot;https://twitter.com/grailsframework/status/862196110076641280&quot;&gt;greatly reduced&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Memory usage &lt;a href=&quot;https://twitter.com/nulleric/status/973368868541550592&quot;&gt;greatly reduced&lt;/a&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Unified and pluggable events/async - breaking change to pervious async&lt;/p&gt;
@@ -793,7 +796,7 @@ If you have anything to add, please let me know! &lt;a href=&quot;mailto:info@gr
 &lt;p&gt;GORM Event example: &lt;a href=&quot;https://github.com/grails-plugins/grails-spring-security-core/blob/master/src/main/templates/PersonPasswordEncoderListener.groovy.template&quot; class=&quot;bare&quot;&gt;https://github.com/grails-plugins/grails-spring-security-core/blob/master/src/main/templates/PersonPasswordEncoderListener.groovy.template&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;NOTE: This will only work in Grails 3.2.9 or GORM 6.0.10 due to a [bug in GORM 6.0.9](&lt;a href=&quot;https://github.com/grails/grails-data-mapping/issues/885#issuecomment-291882517&quot; class=&quot;bare&quot;&gt;https://github.com/grails/grails-data-mapping/issues/885#issuecomment-291882517&lt;/a&gt;) which shipped by default with this version.&lt;/p&gt;
+&lt;p&gt;NOTE: This will only work in Grails 3.2.9 or GORM 6.0.10 due to a &lt;a href=&quot;https://github.com/grails/grails-data-mapping/issues/885#issuecomment-291882517&quot;&gt;bug in GORM 6.0.9&lt;/a&gt; which shipped by default with this version.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;

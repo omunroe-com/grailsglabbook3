@@ -22,7 +22,7 @@ New app diffs: https://github.com/erichelgeson/grails-versions/compare/3.1.15...
   - Re-Enable
     - Globally: `grails.gorm.autowire = true`
     - GORM Event example: https://github.com/grails-plugins/grails-spring-security-core/blob/master/src/main/templates/PersonPasswordEncoderListener.groovy.template
-      - NOTE: This will only work in Grails 3.2.9 or GORM 6.0.10 due to a [bug in GORM 6.0.9](https://github.com/grails/grails-data-mapping/issues/885#issuecomment-291882517) which shipped by default with this version.
+      - NOTE: This will only work in Grails 3.2.9 or GORM 6.0.10 due to a https://github.com/grails/grails-data-mapping/issues/885#issuecomment-291882517[bug in GORM 6.0.9] which shipped by default with this version.
 
 * Reactor events in GORM off for performance improvements.
   - Discussion: https://github.com/grails/grails-core/issues/640#issuecomment-286736679

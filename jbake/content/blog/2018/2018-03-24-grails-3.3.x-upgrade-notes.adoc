@@ -31,9 +31,9 @@ Upgrading from 3.2.x to 3.3
 
   * http://docs.grails.org/3.3.x/guide/upgrading.html
 
-Fresh app diffs 3.2.11 -> 3.3.3
+Fresh app diffs 3.2.12 -> 3.3.3
 
-  * https://github.com/erichelgeson/grails-versions/compare/3.2.11...3.3.3
+  * https://github.com/erichelgeson/grails-versions/compare/3.2.12...3.3.3
 
 ### Notable changes
 
@@ -46,7 +46,8 @@ Fresh app diffs 3.2.11 -> 3.3.3
   - can be enabled per domain now if required in 3.3
     - `static mapping = { autowire true }`
 * Improved support for Multi-tenancy in GORM & GORM data services
-* Distribution and Packaging sizes [greatly reduced](https://twitter.com/grailsframework/status/862196110076641280).
+* Distribution and Packaging sizes https://twitter.com/grailsframework/status/862196110076641280[greatly reduced].
+* Memory usage https://twitter.com/nulleric/status/973368868541550592[greatly reduced].
 * Unified and pluggable events/async - breaking change to pervious async
   - http://async.grails.org/latest/guide/index.html
 * Transactional & ReadOnly annotations moved to GORM
