@@ -1,0 +1,68 @@
+= Grails 3 and Java 9/10/11
+Eric Helgeson
+2018-03-29
+:jbake-type: post
+:jbake-status: published
+:jbake-tags: blog
+:jbake-description: Sorting out Oracles new JDK release schedule and Grails 3.
+:idprefix:
+
+Oracle has announced they will be drastically http://www.oracle.com/technetwork/java/eol-135779.html[speeding up their JDK releases – one every 6 months] with https://jaxenter.com/end-life-comes-early-jdk-8-140824.html[no overlapping public support].
+
+Java 9 was the first in this accelerated release cycle. While these JDK releases come quick, they end just as quickly. As you’re reading this JDK 9 is already end of life(EOL) and JDK 10 was just released (which will be EOL in 6 months.) JDK 11 will be the first long term support (LTS) release of the JDK.
+
+With all this news, there has been some confusion about what will support what when and how people should be planning for in regards to Java releases. I’ll provide a few facts (and a few of my opinions) on what this means to you as a Grails developer.
+
+Let’s start by answering a few concrete questions.
+
+#### Will Grails 3 build on JDK 9+?
+
+Grails 3.3.x is based on Spring-Boot 1.5. Spring-Boot 1.5 does not and will not support building in JDK 9+.
+
+From their wiki: https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-with-Java-9#requirements
+
+****
+Spring Boot **2** is the first version to support Java 9 (Java 8 is also supported). If you are using 1.5 and wish to use Java 9 you should upgrade to 2.0 as **we have no plans to support Java 9 on Spring Boot 1.5.x**.
+****
+
+That’s __definitive__ – you won’t be building Grails 3 apps in anything but JDK7/8 (and that’s ok, keep reading!)
+
+#### Will Grails 3 run on JDK9+?
+
+This is a **much** different question -
+
+The answer is yes – Groovy runs (with a few warnings). You will need to add https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-with-Java-9#jaxb[`jaxb` explicitly to your CLI or in your dependencies] – but it will run. If you use other 3rd party libraries though you will need to validate they will run on JDK9+ as well.
+
+This is great news for user’s environments where you are not able control your runtime and are forced to run on a newer JDK.
+
+#### If I’m on JDK8 how long will it be supported?
+
+Oracle JDK8 will receive pubic updates http://www.oracle.com/technetwork/java/eol-135779.html[through January 2019]  – which is cutting it quite close. Oracle https://jaxenter.com/end-life-comes-early-jdk-8-140824.html[plans no overlapping publicly supported binaries] giving no breathing room for developers.
+
+My recommendation is to switch to OpenJDK 8 which will be supported until https://access.redhat.com/articles/1299013[October 2020] or pay Oracle for support. If you run on any PaaS such as AWS Elastic Beanstalk you’ve already been running on OpenJDK (http://sdkman.io/[sdkman] makes it easy to setup OpenJDK on your workstation as well.)
+
+#### When can I use Java 9/10/11 with Grails?
+
+Spring-Boot 2 was just https://spring.io/blog/2018/03/01/spring-boot-2-0-goes-ga[recently released (March 2018.)] The Grails team is already working on Grails 4 based off it. Quarter 4 of this year (2018) is the targeted release.
+
+#### Now for a few of my opinions.
+
+Grails builds on top of many projects such as Spring-Boot, Hibernate, Gradle, etc. All of these projects must support the latest JDK before Grails can. This IMO is a good thing – it means many compatibility issues and bug fixes can be worked out before we start using it.
+
+#### What should we do for now?
+
+* Spring-Boot 1.5 line is still being actively developed and Grails will continue to use it.
+
+* If you are using Oracles JDK 8 switch to OpenJDK 8 for security updates or pay Oracle for extended support.
+
+* Continue to build on JDK 8 and you should be fine running on JDK 10/11 if you need to.
+
+* Don’t adopt sort term support (STS) or end of life JDK’s such as 9/10
+
+* Stick to LTS JDK releases such as 8 and 11.
+
+#### Conclusion
+
+The release of JDK11 (LTS) and Grails 4 will be around the same time - 2018 Q4 – which is really not that far off. Grails 3.3+ and Spring-Boot 1.5+ are still great choices for building new apps on.
+
+I use Grails so I don’t have to worry about these compatibility issues – I get a nice package of things that are recent and work together. I’ll be happy to let this JDK madness shake out before I get in the middle of it – I have features to ship to users rather than worry about JDK’s that are only supported for 6 months.

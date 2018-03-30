@@ -6,9 +6,117 @@
     <atom:link href="https://www.grails3book.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Tue, 27 Mar 2018 20:48:41 -0500</pubDate>
-    <lastBuildDate>Tue, 27 Mar 2018 20:48:41 -0500</lastBuildDate>
+    <pubDate>Thu, 29 Mar 2018 21:03:45 -0500</pubDate>
+    <lastBuildDate>Thu, 29 Mar 2018 21:03:45 -0500</lastBuildDate>
 
+    
+    <item>
+      <title>Grails 3 and Java 9/10/11</title>
+      <link>https://www.grails3book.com/blog/2018/2018-03-29-grails-jdk-9.html</link>
+      <pubDate>Thu, 29 Mar 2018 00:00:00 -0500</pubDate>
+      <guid isPermaLink="false">blog/2018/2018-03-29-grails-jdk-9.html</guid>
+      <description>
+      &lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Oracle has announced they will be drastically &lt;a href=&quot;http://www.oracle.com/technetwork/java/eol-135779.html&quot;&gt;speeding up their JDK releases – one every 6 months&lt;/a&gt; with &lt;a href=&quot;https://jaxenter.com/end-life-comes-early-jdk-8-140824.html&quot;&gt;no overlapping public support&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Java 9 was the first in this accelerated release cycle. While these JDK releases come quick, they end just as quickly. As you’re reading this JDK 9 is already end of life(EOL) and JDK 10 was just released (which will be EOL in 6 months.) JDK 11 will be the first long term support (LTS) release of the JDK.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;With all this news, there has been some confusion about what will support what when and how people should be planning for in regards to Java releases. I’ll provide a few facts (and a few of my opinions) on what this means to you as a Grails developer.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Let’s start by answering a few concrete questions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;will_grails_3_build_on_jdk_9&quot;&gt;Will Grails 3 build on JDK 9+?&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Grails 3.3.x is based on Spring-Boot 1.5. Spring-Boot 1.5 does not and will not support building in JDK 9+.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;From their wiki: &lt;a href=&quot;https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-with-Java-9#requirements&quot; class=&quot;bare&quot;&gt;https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-with-Java-9#requirements&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sidebarblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Spring Boot &lt;strong&gt;2&lt;/strong&gt; is the first version to support Java 9 (Java 8 is also supported). If you are using 1.5 and wish to use Java 9 you should upgrade to 2.0 as &lt;strong&gt;we have no plans to support Java 9 on Spring Boot 1.5.x&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;That’s &lt;em&gt;definitive&lt;/em&gt; – you won’t be building Grails 3 apps in anything but JDK7/8 (and that’s ok, keep reading!)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;will_grails_3_run_on_jdk9&quot;&gt;Will Grails 3 run on JDK9+?&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This is a &lt;strong&gt;much&lt;/strong&gt; different question -&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The answer is yes – Groovy runs (with a few warnings). You will need to add &lt;a href=&quot;https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-with-Java-9#jaxb&quot;&gt;&lt;code&gt;jaxb&lt;/code&gt; explicitly to your CLI or in your dependencies&lt;/a&gt; – but it will run. If you use other 3rd party libraries though you will need to validate they will run on JDK9+ as well.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This is great news for user’s environments where you are not able control your runtime and are forced to run on a newer JDK.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;if_i_m_on_jdk8_how_long_will_it_be_supported&quot;&gt;If I’m on JDK8 how long will it be supported?&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Oracle JDK8 will receive pubic updates &lt;a href=&quot;http://www.oracle.com/technetwork/java/eol-135779.html&quot;&gt;through January 2019&lt;/a&gt;  – which is cutting it quite close. Oracle &lt;a href=&quot;https://jaxenter.com/end-life-comes-early-jdk-8-140824.html&quot;&gt;plans no overlapping publicly supported binaries&lt;/a&gt; giving no breathing room for developers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;My recommendation is to switch to OpenJDK 8 which will be supported until &lt;a href=&quot;https://access.redhat.com/articles/1299013&quot;&gt;October 2020&lt;/a&gt; or pay Oracle for support. If you run on any PaaS such as AWS Elastic Beanstalk you’ve already been running on OpenJDK (&lt;a href=&quot;http://sdkman.io/&quot;&gt;sdkman&lt;/a&gt; makes it easy to setup OpenJDK on your workstation as well.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;when_can_i_use_java_9_10_11_with_grails&quot;&gt;When can I use Java 9/10/11 with Grails?&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Spring-Boot 2 was just &lt;a href=&quot;https://spring.io/blog/2018/03/01/spring-boot-2-0-goes-ga&quot;&gt;recently released (March 2018.)&lt;/a&gt; The Grails team is already working on Grails 4 based off it. Quarter 4 of this year (2018) is the targeted release.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;now_for_a_few_of_my_opinions&quot;&gt;Now for a few of my opinions.&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Grails builds on top of many projects such as Spring-Boot, Hibernate, Gradle, etc. All of these projects must support the latest JDK before Grails can. This IMO is a good thing – it means many compatibility issues and bug fixes can be worked out before we start using it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;what_should_we_do_for_now&quot;&gt;What should we do for now?&lt;/h4&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Spring-Boot 1.5 line is still being actively developed and Grails will continue to use it.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you are using Oracles JDK 8 switch to OpenJDK 8 for security updates or pay Oracle for extended support.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Continue to build on JDK 8 and you should be fine running on JDK 10/11 if you need to.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Don’t adopt sort term support (STS) or end of life JDK’s such as 9/10&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stick to LTS JDK releases such as 8 and 11.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The release of JDK11 (LTS) and Grails 4 will be around the same time - 2018 Q4 – which is really not that far off. Grails 3.3+ and Spring-Boot 1.5+ are still great choices for building new apps on.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I use Grails so I don’t have to worry about these compatibility issues – I get a nice package of things that are recent and work together. I’ll be happy to let this JDK madness shake out before I get in the middle of it – I have features to ship to users rather than worry about JDK’s that are only supported for 6 months.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	  </description>
+    </item>
     
     <item>
       <title>Practical Grails 3 - 1.2 Release</title>
