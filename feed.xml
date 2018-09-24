@@ -6,9 +6,44 @@
     <atom:link href="https://www.grails3book.com/feed.xml" rel="self" type="application/rss+xml" />
     <description>JBake Bootstrap Template</description>
     <language>en-gb</language>
-    <pubDate>Mon, 23 Jul 2018 09:59:28 -0500</pubDate>
-    <lastBuildDate>Mon, 23 Jul 2018 09:59:28 -0500</lastBuildDate>
+    <pubDate>Mon, 24 Sep 2018 16:46:26 -0500</pubDate>
+    <lastBuildDate>Mon, 24 Sep 2018 16:46:26 -0500</lastBuildDate>
 
+    
+    <item>
+      <title>Practical Grails 3 - 1.3 Release</title>
+      <link>https://www.grails3book.com/blog/2018/2018-09-24-grails-book--1.3-release.html</link>
+      <pubDate>Mon, 24 Sep 2018 00:00:00 -0500</pubDate>
+      <guid isPermaLink="false">blog/2018/2018-09-24-grails-book--1.3-release.html</guid>
+      <description>
+      &lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;m excited to announce &lt;strong&gt;Practical Grails 3&lt;/strong&gt; &lt;code&gt;1.3&lt;/code&gt; has been released!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you&amp;#8217;ve purchased previously you can &lt;a href=&quot;https://www.grails3book.com/resend.html&quot;&gt;grab an updated copy.&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you&amp;#8217;ve not purchased yet get &lt;a href=&quot;https://www.grails3book.com/early-access.html&quot;&gt;your copy today!&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;changelog&quot;&gt;Changelog&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Updated all examples to Grails 3.3.8.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Updates and clarifications based on feedback from readers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	  </description>
+    </item>
     
     <item>
       <title>Grails 3 and Java 9/10/11</title>

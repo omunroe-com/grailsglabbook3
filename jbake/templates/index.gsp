@@ -29,7 +29,7 @@
                 <div class="row-fluid">
                   <a href="purchase.html" class="btn btn-lg btn-info col-xs-12">Purchase Practical Grails 3</a>
                 </div>
-                <p><div>eBook Edition<div class="pull-right">based on Grails 3.3.5</div></div></p>
+                <p><div>eBook Edition<div class="pull-right">based on Grails 3.3.8</div></div></p>
               </div>
             </div>
           </div>
